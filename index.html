@@ -1,79 +1,90 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/new.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Shaun of the Devs</title>
-<!-- InstanceEndEditable -->
-<link href="twoColLiqLt.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
 body,td,th {
 	color: #333;
 }
 body {
-	background-color: #000000;
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
 </style>
-<!--[if lte IE 7]>
-<style>
-.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
-ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
-</style>
-<![endif]-->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
 </head>
-
 <body>
-<div class="container">
-  <div class="sidebar1">
-    <ul class="nav">
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <li><a href="index.html">Home</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="project.html">Project Brief</a></li>
-      <li><a href="assessment1.html">Assessment 1</a></li>
-      <li><a href="assessment2.html">Assessment 2</a></li>
-      <li><a href="assessment3.html">Assessment 3</a></li>
-      <li><a href="assessment4.html">Assessment 4</a></li>
-    </ul>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-  </div>
-  <div align="center"><a href="index.html"><img src="name+logo.png" width="624" height="134" /></a><!-- end .container -->
-    <!-- InstanceBeginEditable name="PageContent" -->
-    <h1>About:</h1>
-    <p>We are a six person Computer Science team at the University of York. We are developing a Zombie game set in the university for our Software Engineering Project module. This site will regularly be updated with our progress at various assessment points and various stages of the project.</p>
-    <p>After Assessment two we switched games with another group, Geese Lightning, so are now finishing their game. We are no longer working on our original game.</p>
-    <!-- InstanceEndEditable --></div>
+
+<div class="sidebar">
+  <a class="active" href="index.html">Home</a>
+  <a href="myBooks.html">My Books</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
 </div>
+
+<div class="content">
+  <h2>Lloyd's Corner</h2>
+  <p>Welcome to my little corner of the internet. You have probably found this through a link on one of my accounts somewhere. Feel free to stay a while and look around.
+     I have created this website because I think the internet has lost its way and also to showcase some of the things I have created.
+  </p>
+  <p>You'll find some links around to various things that I have made and there are also some pages about different ideas I have had and some media and other things that I recommend. I am going to use this page to address my comment on the internet losing its way. I suspect many may question the idea of the internet being able to lose its way. It is just a collection of files after all. What I mean by this is, that when the internet was created I do not believe it was intended for 'content', I think it was for sharing human ideas and art rather than trying to optimise algorithms.  </p>
+  <p>Through our attempts to optimise these algorithms we have created other algorithms, in the form of the now ever present AI, that create content. In this process we have taken the human element out of both creation and delivery of ideas. This feels fundamentally wrong to me. So here is my website where I will, in my own time and with no intention of pleasing any of the algorithms that improve click rates, display things that I have created.</p>
+  <p>In this quieter part of the internet I intend to also be positive in the things and ideas that I showcase where I can. I believe that these algorithms also encourage the worsts parts of the human elements that are left in the places where they are used. They push divisive topics because they get more engagement, push anger, push hate and push misfortune. I have had enough, as many apps as I can that have content feeds that are driven by algorithms I have deleted. Now I encourage you to do the same and hope that you thank me for it, if not you can always go back.</p>
+
+</div>
+
 </body>
-<!-- InstanceEnd --></html>
+</html>
+

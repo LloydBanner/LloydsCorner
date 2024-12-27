@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" main="width=device-width, initial-scale=1.0" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #333;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.main {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.main {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.activeCollapsable {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeCollapsable:after {
+  content: "\2212";
+}
+
+.collapsableContent {
+  padding: 0 18px;
+  max-height: 0;
+  display: none;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a class="active" href="myBooks.html">My Books</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div class="main">
+  <h2>My Books</h2>
+  <p>I have written a few books and even sold a few online. I tried for a while to get more sales with Amazon ads but I have no passion for marketing and found myself again optimising an algorithm so gave up on that. If you want the paperbacks, or hardbacks in some cases, and to support me the links to the Amazon pages are below but you will also find downloads for each of them that are completely free for your reading pleasure.</p>
+  <p>For each book I have added a short blurb and cover. I wanted the books to speak for themselves and since they are free you can just read them so I have kept things simple. Please give them a go if they are of any interest to you!</p>
+  
+  <h3>The Books</h3>
+  <button type="button" class="collapsible">Life is Better This Way</button>
+  <div class="collapsableContent">
+    <p>Released: December 2023</p>
+    <p>My friend Matt described this one as "Cyberpunk 1984" which I think is a nice concise description, although while writing I didn't consciously associate the book with either of these things.</p>
+    <image><img src="mediaMyBooks/LifeIsBetterThisWayFront.png" width="764" height="1219" /></image>
+
+    <a href="https://www.amazon.co.uk/Life-Better-Lloyd-Matthew-Banner/dp/B0CR5VPL38/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Amazon</a> <a href="mediaMyBooks/LifeIsBetterThisWay.docx">Free Download</a>
+  </div>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("activeCollapsable");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
