@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #333;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="myBooks.html">My Books</a>
+  <a class="active" href="creativeGraveyard.html">Creative Graveyard</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div class="content">
+  <h2>Creative Graveyard</h2>
+  <p>The video below is called: Your Unfinished Work Defines you. 
+    Crystal does a very good job of explaining why you shouldn't always finish your creative work.
+  </p>
+  </html><iframe width="420" height="315"
+  src="https://www.youtube.com/embed/_LqGCEL3ZSQ?si=sk20e1jaQ_Ypn-wX">
+  </iframe>
+  <p>So I have quite a bit of work that I never finished and will never finish. I have decided to use this page to display it. I have added some short explanations for some of it.
+  </p>
+
+  
+  <h2>Space Magic</h2>
+  <p>This one was saved in my google drive simply with the name "sci fi story". I wrote at the start of 2018 probably in my second term of university.
+     It was supposed to be a better Star Wars, but I didn't really have a plan other than a few names of people and groups and ultimately I lost motivation.
+     After this I wrote <a href="myBooks.html">Crumbling World</a> which I planned fully before beginning and I was much happier with how that turned out although it was much harder sci-fi than this. 
+     There is only a couple of chapters if you want to give it a read.
+  </p>
+  <a href="mediaUnfinsihedWork/sciFiStory.doc">Free Download</a>
+</div>
+
+</body>

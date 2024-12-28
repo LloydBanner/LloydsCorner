@@ -1,0 +1,3 @@
+- Wind from the east mostly
+- Compass
+- No stars

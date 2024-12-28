@@ -1,0 +1,4 @@
+- Lots of small islands
+- Bogs, rocky of forest mostly
+- Crystal formations grow from the ground and sea
+- Felucia or valinar style plants

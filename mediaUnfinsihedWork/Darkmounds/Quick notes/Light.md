@@ -1,0 +1,5 @@
+- Shinning citadel has a “sun”
+- Smaller sources of light dotted around the darkmounds
+- Citadel in the mountains is hard to get to and it’s is believed that you get burnt to a crisp on approach
+- Light allows growth and prosperity
+- Lights are fading
