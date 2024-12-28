@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #333;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="myBooks.html">My Books</a>
+  <a class="active" href="recommendations.html">Recommendations</a>
+  <a href="creativeGraveyard.html">Creative Graveyard</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div class="content">
+  <h2>Recommendations</h2>
+  <p>I read a book called: "Algorithms to Live by" in my first year of university. It might be considered ironic considering all my anti-algorithm rhetoric on this website but I have chosen to follow some of these algorithms in my life. I think understanding the algorithm and know why you use it removes the negative in this case.
+  </p>
+  <p>
+    The algorithm I think about most is the Explore-Exploit Algorithm, this is essentially weighing up when to use a known good option versus trying something new. I am currently mostly exploring with media and things in general but like to record my favorite things so I can come back and exploit them later. I do however, come back to things that I know I will enjoy occasionally when I need to be happier or just want to relax a little.
+  </p>
+  <p>
+    Here you can find links to recommendations of all my favorite things. Each has a review of what I think is good about it.
+  </p>
+  
+  <p>
+    You won't find scores here but I like to consider things when I revisit them and if they still hold up I will give them a categorisation. If I think they are still incredible they become a masterpiece, in my eyes, if they are still good but not quite a masterpiece I will label them great. Otherwise I may remove a recommendation if I do not like it so much anymore. I try to leave at least 5 years before revisiting and using these labels though.
+  </p>
+</div>
+
+</body>
+</html>
