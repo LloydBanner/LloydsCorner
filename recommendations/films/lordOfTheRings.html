@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #adadad;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 10, 9);
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="../../index.html">Home</a>
+  <a href="../../myBooks.html">My Books</a>
+  <a class="active" href="../../recommendations.html">Recommendations</a>
+  <a href="../../creativeGraveyard.html">Creative Graveyard</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div class="content">
+  <h2>Lord of the Rings</h2>
+  <p>
+    Not much needs to be said about this series. The best known fantasy story ever told, which practically all fantasy has been somewhat inspired by since. I like to think that I can avoid the trap of nostalgia tinting my view of things that I revisit, but this is a series where I think that trap is inescapable for me. I have watched the trilogy countless times and know many of the words before they are spoken. I can see these films as nothing but masterpieces.
+  </p>
+  <p>
+    One thing that did come up in discussion with a colleague of mine though was if they are good adaptations of the source material. I read the books, apart from the hobbit, after watching the films many times. What I see in the films is a retelling of the same story with some tweaks to make it work better for the medium of film and the removal of some of the weirder and I think worse plotlines. I also do not disagree with a tale being recreated with a different vision as long as it is told well. These films are an incredible retelling if you ask me.
+  </p>
+  <p>
+    The extended versions of the trilogy are how I would recommend watching them. They add a bit more humour and improve the pacing slightly.
+  </p>
+  <div class="buttonTable">
+    <a href="#fellowship">The Fellowship of the Ring</a>
+    <a href="#towers">The Two Towers</a>
+    <a href="#king">Return of the King</a>
+    <a href="#otherStuff">Other Stuff</a>
+  </div>
+
+  <h2 id="fellowship">The Fellowship of the Ring</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    My favorite film in the series. The tone of this film is much brighter than the later two films and that combined with the great world building make this an easy film to rewatch. We see good setup for the greater story, have strong introductions to the large cast and there are some good fight scenes. The better battles are certainly in the later films though. 
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <h2 id="towers">The Two Towers</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    The battle for helms deep is one of the greatest sieges every put to film. Simply outstanding. I do find Frodo and Sam's journey to be less interesting than the rest of the story but it is still good and everything else is amazing. the introduction of the ents and Rohan are standouts.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <h2 id="king">The Return of the King</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    A great conclusion to the trilogy with another great siege and we also really see Aragorn shine in this one. This film is all round a good film and a perfect conclusion to the trilogy.
+  </p>
+  <p>
+    The campaign in this game is incredible. The set pieces, like having to board the huge scarab vehicles, the encounters with the flood and the escape at the end are all executed perfectly. The filler and difficulty issues from Halo 2 are gone and the story wraps up nicely. This one is good to play on heroic with some skulls or legendary without I would say.
+  </p>
+  <p>
+    Multiplayer has a good variety of maps and weapons, although online has some people who are a little too good for the game to be fun. If you can find a few friends and play private matches or splitscreen though that can be a blast. There is also a bunch of community made maps and modes which can be a lot of fun.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <h2 id="otherStuff">Other Stuff</h2>
+  <p>
+    I found the Hobbit trilogy lacking when I watched it. It is stretched a little thin and there is too much filler for my liking. I highly recommend fan edits that edit them down in to one film such as the <a href="https://youtu.be/QFnvzHgF5aM?si=NCiFwh54YLiYbc9G">Ed Edit</a> or the <a href="http://www.maple-films.com/downloads.html">Maple Films Tolkien Edit</a>. These feel much better to watch and still have all the best bits from the films.
+  </p>
+  <p>
+    There are also some great Lord of the Rings games and mods which you can find my recommendations for 
+    <a href="#otherStuff">here</a> on my in my video game recommendations.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+</body>
+</html>
