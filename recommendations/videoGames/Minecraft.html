@@ -8,17 +8,19 @@ body {
   font-family: "Lato", sans-serif;
 }
 body,td,th {
-	color: #adadad;
+	color: #fffefe;
 }
 body {
 	background-color: black;
+  background-image: url("/images/back.gif");
+  background-repeat: repeat;
 }
 
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: rgb(8, 10, 9);
+  background-color: black;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -67,7 +69,7 @@ div.content {
 .buttonTable {
   margin: 0;
   padding: 0;
-  background-color: rgb(8, 10, 9);
+  background-color: black;
   overflow: auto;
 }
 
@@ -87,21 +89,34 @@ div.content {
   background-color: #333;
   color: white;
 }
+
 </style>
 </head>
 <body>
 
 <div class="sidebar">
-  <a href="../../index.html">Home</a>
-  <a href="../../myBooks.html">My Books</a>
-  <a href="../../uniProjects.html">University Projects</a>
-  <a class="active" href="../../recommendations.html">Recommendations</a>
-  <a href="../../videos.html">Videos</a>
-  <a href="../../creativeGraveyard.html">Creative Graveyard</a>
+  <a href="/index.html">Home</a>
+  <a href="/myBooks.html">Books</a>
+  <a href="/uniProjects.html">University Projects</a>
+  <a class="active" href="/recommendations.html">Recommendations</a>
+  <a href="/videos.html">Videos</a>
+  <a href="/creativeGraveyard.html">Creative Graveyard</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/index.html">
+      <img src="/images/Logo.gif" width="320" height="60"/>
+    </a>
 </div>
 
 <div class="content">
-  <h2>Minecraft</h2>
+  <a href="/recommendations/recommendedVideoGames.html">
+      <img src="/images/PC.gif">
+  </a>
+  <div>
+    <img src="/images/Minecraft.webp" width="300" height="40"/>
+  </div>
+
   <h3>Masterpiece</h3>
   <p>
     Minecraft is a game that I played back when it was still in beta. I started playing in 2011 probably not long after beta 1.7 was released. This may be my most played game ever. At its core it is a sandbox survival game but its customisability allows it to be so much more than that. People have made custom maps with stories, mods that transform the game in to fantasy rpgs or technical automation games, and there are also many servers all with their own themes and settings. I will use this page to review Minecraft at different times when I revisit it with different versions and mods. It has changed a lot through the years and it is a fundamentally different game from when I first played it now.
@@ -147,9 +162,12 @@ div.content {
   <div class="buttonTable">
     <a href="#">Top</a>
   </div>
+
+  <div>
+    <img src="/images/IPlayMinecraft.webp"/>
+  </div>
   
 </div>
-
 
 </body>
 </html>

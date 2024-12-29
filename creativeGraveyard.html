@@ -8,7 +8,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 body,td,th {
-	color: #adadad;
+	color: #fffefe;
 }
 body {
 	background-color: black;
@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: rgb(8, 10, 9);
+  background-color: black;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -63,17 +63,47 @@ div.content {
     float: none;
   }
 }
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
 </style>
 </head>
 <body>
 
 <div class="sidebar">
   <a href="index.html">Home</a>
-  <a href="myBooks.html">My Books</a>
+  <a href="myBooks.html">Books</a>
   <a href="uniProjects.html">University Projects</a>
   <a href="recommendations.html">Recommendations</a>
   <a href="videos.html">Videos</a>
   <a class="active" href="creativeGraveyard.html">Creative Graveyard</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/index.html">
+      <img src="/images/Logo.gif" width="320" height="60"/>
+    </a>
 </div>
 
 <div class="content">

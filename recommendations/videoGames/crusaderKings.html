@@ -8,17 +8,19 @@ body {
   font-family: "Lato", sans-serif;
 }
 body,td,th {
-	color: #adadad;
+	color: #fffefe;
 }
 body {
 	background-color: black;
+  background-image: url("/images/back.gif");
+  background-repeat: repeat;
 }
 
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: rgb(8, 10, 9);
+  background-color: black;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -67,7 +69,7 @@ div.content {
 .buttonTable {
   margin: 0;
   padding: 0;
-  background-color: rgb(8, 10, 9);
+  background-color: black;
   overflow: auto;
 }
 
@@ -93,14 +95,24 @@ div.content {
 
 <div class="sidebar">
   <a href="../../index.html">Home</a>
-  <a href="../../myBooks.html">My Books</a>
+  <a href="../../myBooks.html">Books</a>
   <a href="../../uniProjects.html">University Projects</a>
   <a class="active" href="../../recommendations.html">Recommendations</a>
   <a href="../../videos.html">Videos</a>
   <a href="../../creativeGraveyard.html">Creative Graveyard</a>
 </div>
 
+<div id="logo" style="text-align: center;">
+    <a href="/index.html">
+      <img src="/images/Logo.gif" width="320" height="60"/>
+    </a>
+</div>
+
 <div class="content">
+  <a href="/recommendations/recommendedVideoGames.html">
+      <img src="/images/PC.gif">
+  </a>
+
   <h2>Crusader Kings</h2>
   <p>
     Crusader Kings is a series of medieval ruler simulation sandbox games. They have a view where you see a map and can interact with various characters, most of which are actual historical figures, and can wage wars on different countries. There is no real goal and it is very much a game where you make up your own objectives. This can be a lot of fun if it is your sort of thing. These games are also very moddable meaning you get some good total conversion mods which replace the medieval with a fantasy one.

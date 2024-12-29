@@ -8,17 +8,19 @@ body {
   font-family: "Lato", sans-serif;
 }
 body,td,th {
-	color: #adadad;
+	color: #fffefe;
 }
 body {
 	background-color: black;
+  background-image: url("/images/back.gif");
+  background-repeat: repeat;
 }
 
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: rgb(8, 10, 9);
+  background-color: black;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -108,11 +110,17 @@ div.main {
 
 <div class="sidebar">
   <a href="index.html">Home</a>
-  <a class="active" href="myBooks.html">My Books</a>
+  <a class="active" href="myBooks.html">Books</a>
   <a href="uniProjects.html">University Projects</a>
   <a href="recommendations.html">Recommendations</a> 
   <a href="videos.html">Videos</a>
   <a href="creativeGraveyard.html">Creative Graveyard</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/index.html">
+      <img src="/images/Logo.gif" width="320" height="60"/>
+    </a>
 </div>
 
 <div class="main">
