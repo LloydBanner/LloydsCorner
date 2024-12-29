@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #adadad;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="myBooks.html">My Books</a>
+  <a href="uniProjects.html">University Projects</a>
+  <a href="recommendations.html">Recommendations</a>
+  <a href="videos.html">Videos</a>
+  <a class="active" href="creativeGraveyard.html">Creative Graveyard</a>
+</div>
+
+<div class="content">
+  <h2>Videos</h2>
+  <p> 
+    A long time ago I used to have a <a href="https://youtube.com/@defeater33ify?si=ipAUkekK14fw7bpP">Youtube Channel</a> and actively upload videos to it. Initially I did a lot of gaming videos which I am not going to show here because I don't think they are that great, but later I started doing comedy sketches which I think still hold up okay in comparison. You can find them below.
+  </p>
+  <p>
+    They are ordered from my favorite to least favorite. Please try to look past the terrible acting of my 14 year old self.
+  </p>
+ 
+  <h2>Boris the Orange: An Unexpected Journey</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fPLRQYixluE?si=6FEzNDP_7hbF5yb_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  <h2>Boris the Orange Outtakes</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mRpByHVqlEU?si=kG-frw3LJM6vnmNp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h2>Colin the Cactus</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/vTPSQTtr7K0?si=R_q01W9dE3enWrTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  <h2>Clone</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/yg23PpPC92s?si=q2AuKQxKVGJSraLi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h2>Dubstep Egg</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/iOUfkq4xAoo?si=arOJotPb4747CHb-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h2>Eat Me</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7MBvSkA57cA?si=3fxdZrlvxLMjwvED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+</div>
+
+</body>
