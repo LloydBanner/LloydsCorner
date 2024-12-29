@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #adadad;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 10, 9);
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="../index.html">Home</a>
+  <a href="../myBooks.html">My Books</a>
+  <a class="active" href="../recommendations.html">Recommendations</a>
+  <a href="../creativeGraveyard.html">Creative Graveyard</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div class="content">
+  <h2>Recommended Films</h2>
+  <p>
+    Films are my favorite form of video media. I think a film can tell just as good a story as a TV series and do it without the filler when executed well. I look for both style and substance in a film.
+  </p>
+
+  <div class="buttonTable">
+    <a href="films/lordOfTheRings.html">Lord of the Rings</a>
+  </div>
+</div>
+
+</body>
+</html>
