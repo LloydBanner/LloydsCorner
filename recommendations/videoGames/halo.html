@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #adadad;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 10, 9);
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="myBooks.html">My Books</a>
+  <a class="active" href="recommendations.html">Recommendations</a>
+  <a href="creativeGraveyard.html">Creative Graveyard</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div class="content">
+  <h2>Halo</h2>
+  <p>
+    Halo is a series I played a lot at school. I got into it properly when I was about 11 in 2010 when my friend had got Halo: Reach not long after it was launched. Recently, I have replayed all the campaigns with another friend and they hold up really well. The best place to play them is undoubtedly through the Master Chief Collection which has all the Halo games up to Halo 4 but I won't say anymore about that entry in the series.
+  </p>
+  <p>
+    My biggest issue with the Master Chief Collection is the lack of splitscreen on PC, this isn't an issue on Xbox. There is this great tool called <a href="https://nucleus-coop.github.io/">Nucleus Coop</a> which I highly recommend which allows you to play splitscreen on PC and also works with plenty of other games that are lacking splitscreen. There is also a great <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2077569545">guide</a> for how to use it. Splitscreen can be a lot of fun for all the modes, if you want to play cooperatively or against each other.
+  </p>
+  <div class="buttonTable">
+    <a href="#CE">Halo: Combat Evolved</a>
+    <a href="#2">Halo 2</a>
+    <a href="#3">Halo 3</a>
+    <a href="#ODST">Halo: ODST</a>
+    <a href="#Reach">Halo: Reach</a>
+  </div>
+
+  <h2 id="CE">Halo: Combat Evolved</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    The first entry in the halo series and it still plays incredibly well from a singleplayer perspective. The multiplayer I would avoid though since it is quite inaccessible especially if you have never played it before. 
+  </p>
+  <p>
+    This game has many of the weapons and mechanics that persist throughout the series. It is certainly the roughest of the original games but is absolutely worth playing. The levels are varied with everything from nighttime stealth missions to tank battles. The combat is fun and there are plenty of approaches to most situations. I think this one is most fun on heroic difficulty, normal felt a bit too easy and legendary could be frustrating at times. Heroic is a nice middle ground and adding a few skulls, which are difficulty modifiers, can be fun to spice it up a little.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <h2 id="2">Halo 2</h2>
+  <h4>
+    Great 
+  </h4>
+  <p>
+    Halo 2 expanded on a lot of mechanics in Halo: Combat Evolved and refined the formula. The mechanics from this game stuck around mostly for Halo 3 and ODST with a few more changes in Reach. This one suffers a little from long repeating sections and sometimes unfair difficulty on hard settings. I would recommend playing this one on normal difficulty with some skulls or on heroic. This one is very much not fun on legendary.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <h2 id="3">Halo 3</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    I think this game and Halo: Reach are tied for the peak of the series in my eyes. The campaign hits all the right notes, the multiplayer is still reasonably accessible although you will encounter some pros online and they really nailed the gameplay in this one.
+  </p>
+  <p>
+    The campaign in this game is incredible. The set pieces, like having to board the huge scarab vehicles, the encounters with the flood and the escape at the end are all executed perfectly. The filler and difficulty issues from Halo 2 are gone and the story wraps up nicely. This one is good to play on heroic with some skulls or legendary without I would say.
+  </p>
+  <p>
+    Multiplayer has a good variety of maps and weapons, although online has some people who are a little too good for the game to be fun. If you can find a few friends and play private matches or splitscreen though that can be a blast. There is also a bunch of community made maps and modes which can be a lot of fun.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <h2 id="ODST">Halo: ODST</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    The last game made by Bungie, the original developer of the Halo series, this one feels like a true send off for the series.
+  </p>
+  <p>
+    The campaign is a prequel to all the other games but is best enjoyed after playing the other games above. It follows a group of spartans after the Covenant, the aliens you fight throughout the series, begin to invade a planet called reach. Reach undoubtedly has the best storytelling of any game in the series and feels like it has real stakes. There is missions of all varieties seen in the previous games but perfected and the weapon sandbox feels like it has the best variety. I would play this on heroic with skulls.
+  </p>
+  <p>
+    Firefight returns in this game and has a few improvements from ODST, the multiplayer was also a lot of fun in this one and is probably the most modern of the Halo game I would recommend. You still have the issue of getting some people who are too good online so maybe play this one in private matches or splitscreen too. Like Halo 3 there is a good variety of custom maps and modes. 
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <h2 id="Reach">Halo: Reach</h2>
+  <h4>
+    Great 
+  </h4>
+  <p>
+    This one is just a campaign and a firefight mode. Getting it when it came out also gave you all the DLC maps for Halo 3 but they are all included in the Master Chief Collection now.
+  </p>
+  <p>
+    In the campaign you play as an orbital drop ship trooper instead of a spartan like all the other games. This makes you a little weaker than the other games and pushes a bit more of a focus on stealth in the campaign. It is fun and has an interesting non-linear narrative but doesn't quite reach the highs of Halo 3. I would play this on heroic. 
+  </p>
+  <p>
+    Firefight is also a fun mode which has you survive against waves of enemies. Some people absolutely love it, I have had some fun with it but I much prefer the Halo campaigns. 
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
