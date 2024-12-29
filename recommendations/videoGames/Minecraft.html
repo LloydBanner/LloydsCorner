@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #adadad;
+}
+body {
+	background-color: black;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(8, 10, 9);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 10, 9);
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="../../index.html">Home</a>
+  <a href="../../myBooks.html">My Books</a>
+  <a href="../../uniProjects.html">University Projects</a>
+  <a class="active" href="../../recommendations.html">Recommendations</a>
+  <a href="../../creativeGraveyard.html">Creative Graveyard</a>
+</div>
+
+<div class="content">
+  <h2>Minecraft</h2>
+  <h3>Masterpiece</h3>
+  <p>
+    Minecraft is a game that I played back when it was still in beta. I started playing in 2011 probably not long after beta 1.7 was released. This may be my most played game ever. At its core it is a sandbox survival game but its customisability allows it to be so much more than that. People have made custom maps with stories, mods that transform the game in to fantasy rpgs or technical automation games, and there are also many servers all with their own themes and settings. I will use this page to review Minecraft at different times when I revisit it with different versions and mods. It has changed a lot through the years and it is a fundamentally different game from when I first played it now.
+  </p>
+  <p>
+    When I go back to my parents I will hunt for some of my old worlds and update this page with them.
+  </p>
+  <div class="buttonTable">
+    <a href="#covid">Survival Island Java 1.16-1.18</a>
+    <a href="#dwarfia">The Mines of Dwarfia</a>
+  </div>
+
+  <h2 id="covid">Survival Island Java 1.16-1.18</h2>
+  <p>
+    During the Covid lockdowns I started a new Minecraft world. I couldn't be bothered with going hunting for everything and wanted to keep things simple so I found a world with an island at the spawn, cheated to spawn in a few items, put an end portal deep underground on the island and a skeleton spawner. This was a DIY survival island which used to be a popular survival challenge where you couldn't leave the island.
+  </p>
+  <p>
+    This challenge meant I interacted a lot with new mechanics but very little with the new world generation. I had a lot of fun and manged to automate farming for a lot of resources. The most annoying thing was the new phantom mobs that had been added since the last time I played but these were not a major issue after I made my large pyramid base. I would highly recommend giving this sort of challenge a go in any version of Minecraft.
+  </p>
+  <p>
+    When I got bored of the island I sued that fact that distance is shorter in the nether to create a quick access to the mainland because I wanted to see things from the new caves update but never really got around to exploring properly.
+  </p>
+  <a href="https://drive.google.com/file/d/14zE0f-t4zZhv-ZkxTRJMUnH12q539Wu8/view?usp=drive_link">World Download</a>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  
+  <h2 id="dwarfia">The Mines of Dwarfia 1.5.2</h2>
+  <p>
+    This was a CTM (complete the monument) map that I made in 2013 which I think was for Minecraft version 1.5.2. Honestly, I have no idea if this is actually any good but I do intend to replay it and when I do I will update this page. I used to like the CTM maps made by 
+    <a href="https://vechsdavion.com/super-hostile-maps/">Vechs</a> which are maps where you are intended to find and complete a monument. The monument has spots for every colour of wool in the game and the metal blocks. The were supposed to be a hard but fair challenge.
+  </p>
+  <p>
+    I have a feeling that this may not be the most fair map but it did get a few hundred downloads back in the day and people didn't seem to hate it. There used to be a Minecraft Forum page for it but that seems to have been deleted along with my old account there. Maybe give it a go or your better option if you want to play a CTM map is to player the super hostile maps by
+    <a href="https://vechsdavion.com/super-hostile-maps/">Vechs</a>.
+  </p>
+  <p>
+    If you do download be sure to change your Minecraft to version 1.5.2. You may also notice some links in the readme to my old YouTube channel. Most of the videos there are private because I find them difficult to watch. But for a sample this is the old
+    <a href="https://www.youtube.com/watch?v=s-v78m40D8U">trailer</a> for The Mines of Dwarfia.
+  </p>
+  <a href="MinecraftWorlds/TheMinesOfDwarfia.zip">World Download</a>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
