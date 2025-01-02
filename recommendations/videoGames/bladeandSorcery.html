@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #fffefe;
+}
+body {
+	background-color: black;
+  background-image: url("/LloydsCorner/images/back.gif");
+  background-repeat: repeat;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.90); /* Black with 50% opacity */
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="/LloydsCorner/index.html">Home</a>
+  <a href="/LloydsCorner/myBooks.html">Books</a>
+  <a href="/LloydsCorner/uniProjects.html">University Projects</a>
+  <a href="/LloydsCorner/art.html">Art</a>
+  <a href="/LloydsCorner/thoughts.html">Thoughts</a>
+  <a class="active" href="/LloydsCorner/recommendations.html">Recommendations</a>
+  <a href="/LloydsCorner/cooking.html">Cooking</a>
+  <a href="/LloydsCorner/videos.html">Videos</a>
+  <a href="/LloydsCorner/creativeGraveyard.html">Creative Graveyard</a>
+  <a href="/LloydsCorner/contact.html">Contact</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/LloydsCorner/index.html">
+      <img src="/LloydsCorner/images/Logo.gif" width="320" height="60"/>
+    </a>
+</div>
+
+<div class="content">
+  <a href="/LloydsCorner/recommendations/recommendedVideoGames.html">
+      <img src="/LloydsCorner/images/PC.gif">
+  </a>
+
+  <div class="text-container"> 
+  <h2>Blade and Sorcery (VR)</h2>
+  <p>
+    This game has the best sword combat I have seen in a VR game. It is very fluid and feels really good, but may worry you a little if you enjoy it too much. There is a campaign mode that has recently been added but you can also just fight in an arena against waves of enemies. Definitely try it if you have a VR headset.
+  </p>
+
+  <h2>Mods</h2>
+  <p>
+    I love the base game of Blade and Sorcery but I love 
+    <a href="https://www.nexusmods.com/bladeandsorcery/mods/528">The Outer Rim</a> mod more. It adds practically every Star Wars weapon you can imagine to the game and waves of enemies with lightsabers. It even gives you the ability to use the force. As far as I am concerned this is more fun than any Star Wars VR game although there are a few good ones. Add this and a few mods that add different Star Wars enemy waves and you will have a blast.
+  </p>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
