@@ -104,6 +104,11 @@ div.main {
   max-height: max-content;
   display: none;
 }
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.90); /* Black with 50% opacity */
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -128,10 +133,13 @@ div.main {
 </div>
 
 <div class="main">
+  <div class="text-container"> 
   <h2>My Books</h2>
   <p>I have written a few books and even sold a few online. I tried for a while to get more sales with Amazon ads but I have no passion for marketing and found myself again optimising an algorithm so gave up on that. If you want the paperbacks, or hardbacks in some cases, and to support me the links to the Amazon pages are below but you will also find downloads for each of them that are completely free for your reading pleasure.</p>
   <p>For each book I have added a short blurb and cover. I wanted the books to speak for themselves and since they are free you can just read them so I have kept things simple. Please give them a go if they are of any interest to you!</p>
-  
+  </div>
+
+  <div class="text-container"> 
   <h3>The Books</h3>
   <button type="button" class="collapsible">Life is Better This Way</button>
   <div class="collapsableContent">
@@ -159,7 +167,7 @@ div.main {
     <p></p>
     <a href="https://www.amazon.co.uk/Crumbling-World-Lloyd-Banner-ebook/dp/B07HDQ317F?ref_=ast_author_dp">Amazon</a> <a href="mediaMyBooks/CrumblingWorld.docx">Free Download</a>
   </div>
-  
+</div> 
   
 </div>
 
