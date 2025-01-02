@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #fffefe;
+}
+body {
+	background-color: black;
+  background-image: url("/LloydsCorner/images/back.gif");
+  background-repeat: repeat;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.90); /* Black with 50% opacity */
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="/LloydsCorner/index.html">Home</a>
+  <a href="/LloydsCorner/myBooks.html">Books</a>
+  <a href="/LloydsCorner/uniProjects.html">University Projects</a>
+  <a href="/LloydsCorner/art.html">Art</a>
+  <a href="/LloydsCorner/thoughts.html">Thoughts</a>
+  <a class="active" href="/LloydsCorner/recommendations.html">Recommendations</a>
+  <a href="/LloydsCorner/cooking.html">Cooking</a>
+  <a href="/LloydsCorner/videos.html">Videos</a>
+  <a href="/LloydsCorner/creativeGraveyard.html">Creative Graveyard</a>
+  <a href="/LloydsCorner/contact.html">Contact</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/LloydsCorner/index.html">
+      <img src="/LloydsCorner/images/Logo.gif" width="320" height="60"/>
+    </a>
+</div>
+
+<div class="content">
+  <a href="/LloydsCorner/recommendations/recommendedVideoGames.html">
+      <img src="/LloydsCorner/images/PC.gif">
+  </a>
+
+  <div class="text-container"> 
+  <h2>XCOM</h2>
+  <p>
+    The XCOM games are turn based tactics games where you play as a small group defending Earth against malicious alien invaders. They are really well made and have a great element of making you make difficult decisions about which things are more important than others. Giving each of your soldiers names makes you care about them an makes their deaths have a greater impact. 
+  </p>
+  </div>
+  <div class="buttonTable">
+    <a href="#xcom">XCOM</a>
+    <a href="#xcom2">XCOM 2</a>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="xcom">XCOM</h2>
+  <p>
+    The 2012 XCOM is the first one I played, I haven't tried the older ones but have heard they are also pretty good. This is just an all around solid turn based tactics game. Well worth a go. Be sure to name your soldiers though.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="xcom2">XCOM 2</h2>
+  <p>
+    XCOM 2 expands on the first game but continues as if you had lost in the first game which very few games do. The aliens have taken over Earth and you play a guerrilla rebel force trying to strike back at these alien overlords. Another great game in the series.
+  </p>
+  <p>
+    There is also a great mod for this one that replaces the aliens with the Empire from Star Wars if you like that sort of thing called: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1395522281">Advent to Empire</a>.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
