@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #fffefe;
+}
+body {
+	background-color: black;
+  background-image: url("/LloydsCorner/images/back.gif");
+  background-repeat: repeat;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.90); /* Black with 50% opacity */
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="/LloydsCorner/index.html">Home</a>
+  <a href="/LloydsCorner/myBooks.html">Books</a>
+  <a href="/LloydsCorner/uniProjects.html">University Projects</a>
+  <a href="/LloydsCorner/art.html">Art</a>
+  <a href="/LloydsCorner/thoughts.html">Thoughts</a>
+  <a class="active" href="/LloydsCorner/recommendations.html">Recommendations</a>
+  <a href="/LloydsCorner/cooking.html">Cooking</a>
+  <a href="/LloydsCorner/videos.html">Videos</a>
+  <a href="/LloydsCorner/creativeGraveyard.html">Creative Graveyard</a>
+  <a href="/LloydsCorner/contact.html">Contact</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/LloydsCorner/index.html">
+      <img src="/LloydsCorner/images/Logo.gif" width="320" height="60"/>
+    </a>
+</div>
+
+<div class="content">
+  <a href="/LloydsCorner/recommendations/recommendedVideoGames.html">
+      <img src="/LloydsCorner/images/PC.gif">
+  </a>
+
+  <div class="text-container"> 
+  <h2>Dishonored</h2>
+  <p>
+    Dishonored is an Immersive Sim series of stealth action games. With a fantasy steampunk setting. They are incredibly well made and intricately designed.
+  </p>
+  </div>
+  <div class="buttonTable">
+    <a href="#Dishonored">Dishonored</a>
+    <a href="#2">Dishonored 2</a>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="Dishonored">Dishonored</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    The first Dishonored is a contender for my favorite game of all time. 
+    The atmosphere, world, gameplay and graphics all feed together to make a great narrative. All the games elements feel cohesive and well thought out.
+    You can take a combat focus, a stealth focus or somewhere between and this will affect the story. Depending on how many people you kill the city of Dunwall will fall into greater troubles.
+  </p>
+  <p>
+    The powers can be both useful in stealth or combat with a slight leaning towards combat abilities which means some are a little useless in a complete stealth playthrough. I don't think this is n issue though just something to be aware of when playing.
+  </p>
+  <p>
+    The two story DLCs are also well worth playing for this one. They expand the story of Daud one of the characters you meet in the story and are just as well made as the base game.
+    In total they have six levels which is about two thirds extra added on to the base game.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="2">Dishonored 2</h2>
+  <h4>
+    Great 
+  </h4>
+  <p>
+    I like Dishonored 2 and it is a great follow on to the first game but I felt the setting of Karnaca wasn't quite as good as Dunwall.
+    Other than that mine gripe I love this game and think it does a great job of expanding the lore and world of the first game. 
+    It keeps all the best elements from the first game and just adds more solidly made levels for you to play through.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>

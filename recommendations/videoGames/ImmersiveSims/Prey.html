@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #fffefe;
+}
+body {
+	background-color: black;
+  background-image: url("/LloydsCorner/images/back.gif");
+  background-repeat: repeat;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.90); /* Black with 50% opacity */
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="/LloydsCorner/index.html">Home</a>
+  <a href="/LloydsCorner/myBooks.html">Books</a>
+  <a href="/LloydsCorner/uniProjects.html">University Projects</a>
+  <a href="/LloydsCorner/art.html">Art</a>
+  <a href="/LloydsCorner/thoughts.html">Thoughts</a>
+  <a class="active" href="/LloydsCorner/recommendations.html">Recommendations</a>
+  <a href="/LloydsCorner/cooking.html">Cooking</a>
+  <a href="/LloydsCorner/videos.html">Videos</a>
+  <a href="/LloydsCorner/creativeGraveyard.html">Creative Graveyard</a>
+  <a href="/LloydsCorner/contact.html">Contact</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/LloydsCorner/index.html">
+      <img src="/LloydsCorner/images/Logo.gif" width="320" height="60"/>
+    </a>
+</div>
+
+<div class="content">
+  <a href="/LloydsCorner/recommendations/recommendedVideoGames.html">
+      <img src="/LloydsCorner/images/PC.gif">
+  </a>
+
+  <div class="text-container"> 
+  <h2>Prey</h2>
+  <p>
+    Prey 2017 is an incredible Immersive Sim that is very underrated in my opinion.
+  </p>
+  </div>
+  <div class="buttonTable">
+    <a href="#Prey">Prey</a>
+    <a href="#Mooncrash">Mooncrash (DLC)</a>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="Prey">Prey</h2>
+  <p>
+    This game has so many great and creative elements. You have a gluegun which you can use to make bridges and traverse the map to places you wouldn't normally be able to reach,
+    there are powers where you can mimic objects which allows you to hide but also to fit into small spaces, there are a bunch of creative weapons such as a crossbow that shoots foam darts that you can use to toggle control panels. All of these elements
+    are really well thought out out and you could build your character around most of them. When I go back I intend to play completely differently than last time I played.
+  </p>
+  <p>
+    There are also a bunch of survival elements that I had turned off for the base game but are required in the DLC such as oxygen tanks in space which I think are probably worth playing the base game with. 
+  </p>
+  <p>
+    My main issues with the game were the crafting system which didn't feel needed but didn't make the game worse and it being a little overwhelming at the start. Also the stealth systems don't really work so I would avoid them.
+  </p>
+  <p>
+    This game is great and absolutely worth playing. I feel like it went under the radar and I'm not too sure why because everything it does it does well and it does a lot.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+
+  <div class="text-container"> 
+    <h2 id="Mooncrash">Mooncrash</h2>
+    <p>
+      I may have liked Prey's DLC more than the base game. I have replayed it a few times and not replayed the base game yet. 
+      It mixes Prey's core mechanics with an almost rougelike system. When you dye you play as a different character on the space station with different abilities.
+      The goal is to escape with each character, but you gain more information and access to more items as you go. I think this is a great concept that uses the best elements of Prey to their best.
+    </p>
+    <div class="buttonTable">
+      <a href="#">Top</a>
+    </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
