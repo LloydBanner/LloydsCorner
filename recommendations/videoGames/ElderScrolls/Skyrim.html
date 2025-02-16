@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body,td,th {
+	color: #fffefe;
+}
+body {
+	background-color: black;
+  background-image: url("/LloydsCorner/images/back.gif");
+  background-repeat: repeat;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.buttonTable {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+}
+
+.buttonTable a {
+  display: block;
+  color: rgb(63, 56, 56);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.buttonTable a.active {
+  background-color: #4f6e62;
+  color: white;
+}
+
+.buttonTable a:hover:not(.active) {
+  background-color: #333;
+  color: white;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.90); /* Black with 50% opacity */
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="/LloydsCorner/index.html">Home</a>
+  <a href="/LloydsCorner/myBooks.html">Books</a>
+  <a href="/LloydsCorner/uniProjects.html">University Projects</a>
+  <a href="/LloydsCorner/art.html">Art</a>
+  <a href="/LloydsCorner/thoughts.html">Thoughts</a>
+  <a class="active" href="/LloydsCorner/recommendations.html">Recommendations</a>
+  <a href="/LloydsCorner/cooking.html">Cooking</a>
+  <a href="/LloydsCorner/videos.html">Videos</a>
+  <a href="/LloydsCorner/creativeGraveyard.html">Creative Graveyard</a>
+  <a href="/LloydsCorner/contact.html">Contact</a>
+</div>
+
+<div id="logo" style="text-align: center;">
+    <a href="/LloydsCorner/index.html">
+      <img src="/LloydsCorner/images/Logo.gif" width="320" height="60"/>
+    </a>
+</div>
+
+<div class="content">
+  <a href="/LloydsCorner/recommendations/recommendedVideoGames.html">
+      <img src="/LloydsCorner/images/PC.gif">
+  </a>
+
+  <div class="text-container"> 
+  <h2>Skyrim</h2>
+  <h4>
+    Masterpiece 
+  </h4>
+  <p>
+    I have hundred of hours playing Skyrim. It has a way of making exploration feel endlessly rewarding that I have only seen in a few games, most notably Dark Souls, Elden Ring and Zelda: Breath of the Wild.
+    There are also some great quests like the Daedric Quests and the Dark brotherhood questline.
+  </p>
+  <p>
+    This is a game that I come back to every few years though and I like to mix up the experience a bit when I do.
+    This game along with maybe <a href="/LloydsCorner/recommendations/videoGames/Minecraft.html">Minecraft</a> has the greatest modding community I have ever seen.
+    Personally I like to go with 'lore friendly' mods that add to the experience rather than trying to completely change it.
+    I think this is an amazing way to add more to an already great game. There is also a VR version of the game
+    which can be good but needs mods to work well in my opinion.
+  </p>
+  <p>
+    Bellow I am going to list some of my favorite mods in different categories.
+  </p>
+  </div>
+  <div class="buttonTable">
+    <a href="#Gameplay">Gameplay</a>
+    <a href="#Quests">Quests/a>
+    <a href="#Graphics">Graphics</a>
+    <a href="#Overhauls">Overhauls</a>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="Gameplay">Gameplay</h2>
+  <p>
+    I do not play without a mixture of <a href="https://next.nexusmods.com/profile/EnaiSiaion/mods?gameId=1704">EnaiSiaion's</a> mods these days. my favorites are:
+    <br>- <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1137">Ordinator</a> - This mod completely overhauls Skyrim's perk system allowing you to build far more unique and interesting characters.
+    <br>- <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1090">Apocalypse</a> - This one adds a tonne of great spells that fit well into Skyrim
+    <br>- <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1315">Imperious Races</a> - Makes the race you choose have more of an effect on your character and abilities
+    <br>- <a href="https://www.nexusmods.com/skyrimspecialedition/mods/14910">Andomeda</a> - Overhauls the bonuses you get from Standing stones
+    <br>- <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6285">Summermyst</a> - Adds a bunch of new enchantments to the game
+    <br> With all of these mods combined you can really mix up the gameplay in Skyrim and create some really varied characters too. Enai also
+    has lots more mods such as ones that overhaul vampire and werwolf gameplay, and a few more spell mods too. I recommend browsing their mods page and trying out 
+    any that look interesting to you since they are all very well made.
+  </p>
+  <p>
+    For other gameplay stuff here is a quick list:
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/61015">Honed Metal</a> - Allows smiths and mages to upgrade and enchant your gear respectively so you don't have to do it yourself.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/12604">Sky UI</a> - An essential UI overhaul that makes using a mouse with the UI considerably better
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/644">Wet and Cold</a> - NPCs react to the cold, there are also cold breath effects
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/100985">Sentinel</a> - Seamlessly integrates a great variety of new armour into the game
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/22622">More to Say</a> - Adds extra dialogue using lines from the base game
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1187/">Relationship Dialogue Overhaul</a> - Also adds a bunch of extra dialogue using vanilla lines
+    <br> - <a href="https://next.nexusmods.com/profile/anbeegod/mods">Anbeegod's Follower Dialogue Mods</a> - Greatly expands the dialogue of the various followers in the game
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/21654">AI Overhaul</a> - Overhauls the AI of friendly NPCs in cities so they are more realistic
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/72347">Precision</a> - Physics based combat
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/69980">Quickloot</a> - Quick popup menu that speeds up looting
+    <br> - <a href="https://next.nexusmods.com/profile/jayserpa/mods?gameId=1704">Jayserpa's mods</a> - Lots of minor tweaks and fixes
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/93258">Know Your Enemy 2</a> - Adds weaknesses and resistances to the enemies in the game 
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/123521">Dragonborn's Bestiary</a> - Adds a bestiary with enemy weakness and resistances.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/44810">Extended Encounters</a> - Adds more encounters to the world.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="Quests">Quests</h2>
+  <p>
+    I have played a lot of Skyrim Quest mods, these are my favorites. Some are small some are huge:
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/10917">Beyond Skyrim: Bruma</a> - Adds in the Northern part of Cyrodill (where Oblivion is set) with a nunch of quests. This is as well made as an offical DLC. This was a teaser to a full Cyrodill release which I am still waiting on.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1179">The Forgotten City</a> - A murder mystery in a lost city, this one got made into a game later.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/15996">Project AHO</a> - An underground village where you get abducted and have to try and escape.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/20035">Lucien</a> - A unique follower with a full and well made questline.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/4155">Clockwork</a> - Horror themed Dwemer dungeon.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/18330">Immersive World Encounters</a> - Adds more random events to the game some of which lead to some fun quests.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/52704">At Your Own Pace</a> - Provides more natural breaks in some quests
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/25464">Timing is Everything</a> - Adjusts the starting points for a lot of quests and also allows you to tweak them yourself.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/51798">Dungeons Revisited</a> - Overhauls a bunch of dungeons making them longer and more interesting.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/2218">Easyrider's Dungeons</a> - Adds some well made dungeons to the game.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/12186">Hammet's Dungeons</a> - Another dungeon pack.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/66784">Inconvenient Dungeons</a> - Makes it so less dungeons have a quick secret back exit.
+    <br> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/159">Even Better Quest Objectives</a> - Better Quest descriptions
+    <br> I also recommend just trying out some quest mods that look interesting to you.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="Graphics">Graphics</h2>
+  <p>
+    I don't like to go too over the top with graphics. I think the 
+    <a href="https://next.nexusmods.com/profile/DrJacopo/mods?gameId=1704&sortBy=endorsements">Cathedral Overhauls</a> do a great job.
+  </p>
+  <div class="buttonTable">
+    <a href="#">Top</a>
+  </div>
+  </div>
+
+  <div class="text-container"> 
+  <h2 id="Overhauls">Overhauls</h2>
+  <p>
+    There are a few massive mods on their way for Skyrim. The one I am most looking forward to is 
+    <a href="https://skyblivion.com/">Skyblivion</a> which is a remake of <a href="Oblicion.html">Oblivion</a> in Skyrim's engine
+    with fully updated assets and quests. There are also the 
+    <a href="https://beyondskyrim.org/">Beyond Skyrim</a> mods which aim to create the rest of Tamriel in Skyrim and allow youto explore beyond the original borders of the game.
+    I will be playing any of these as soon as they come out.
+  </p>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
